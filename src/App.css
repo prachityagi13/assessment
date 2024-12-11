@@ -1,0 +1,37 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* background-color: #f0f2f5; */
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+
+.content-panels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .content-panels {
+    flex-direction: column;
+  }
+  .app {
+    min-height: 100vh;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
